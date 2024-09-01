@@ -119,5 +119,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-Make the UI more nicer and appealing
