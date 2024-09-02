@@ -3,12 +3,12 @@ import pandas as pd
 from datetime import datetime
 
 def calculate_gas_sold(amount_paid):
-    gas_price = 1.88  # $1.80 per 1kg of gas
+    gas_price = 1.90  # $1.90 per 1kg of gas
     gas_sold = amount_paid / gas_price
     return gas_sold
 
 def calculate_gas_sold_zar(amount_paid):
-    gas_price = 40  # 20 ZAR per 1kg of gas
+    gas_price = 40  # 40 ZAR per 1kg of gas
     gas_sold = amount_paid / gas_price
     return gas_sold
 
@@ -23,7 +23,7 @@ def save_to_excel(amount_paid, gas_sold, is_zar):
         new_row = {
             'amount sold': amount_paid,
             'kgs gas sold': gas_sold,
-            'gas price': 20,
+            'gas price': 40,
             'time stamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         }
         df.loc[len(df)] = new_row
@@ -38,7 +38,7 @@ def save_to_excel(amount_paid, gas_sold, is_zar):
         new_row = {
             'amount sold': amount_paid,
             'kgs gas sold': gas_sold,
-            'gas price': 1.80,
+            'gas price': 1.90,
             'time stamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         }
         df.loc[len(df)] = new_row
