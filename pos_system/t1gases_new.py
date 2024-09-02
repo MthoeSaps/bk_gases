@@ -69,7 +69,7 @@ def reset_database(is_zar):
 
 def main():
     st.title("Gas Selling App")
-    st.write("Price: $1.80/kg or 20 ZAR/kg")
+    st.write("Price: $1.90/kg or 40 ZAR/kg")
 
     # Load both Excel files
     try:
