@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime
 
 def calculate_gas_sold(amount_paid):
-    gas_price = 1.90  # $1.80 per 1kg of gas
+    gas_price = 1.88  # $1.80 per 1kg of gas
     gas_sold = amount_paid / gas_price
     return gas_sold
 
