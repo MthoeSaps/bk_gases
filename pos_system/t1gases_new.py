@@ -5,7 +5,7 @@ from datetime import datetime
 def calculate_gas_sold(amount_paid):
     gas_price = 1.90  # $1.80 per 1kg of gas
     gas_sold = amount_paid / gas_price
-    return gas_sol
+    return gas_sold
 
 def calculate_gas_sold_zar(amount_paid):
     gas_price = 40  # 20 ZAR per 1kg of gas
